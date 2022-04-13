@@ -56,36 +56,25 @@ createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
 </ul>
 */
 
-function createTodoList(array){
-let ul = document.createElement("ul");
-let root =document.querySelector('html')
-array.forEach((ele)=>{
-  let li = document.createElement("li");
-  let p  = document.createElement("p");
-  p.innerText = ele.name;
-  let input = document.createElement("input");
-  input.checked = true;
-  input.type  = "checkbox";
-  let span = document.createElement("span");
-  span.innerText = "X";
-  li.append(p,input,span);
-  ul.append(li)
-})
-  return root.append(ul);
-}
-
 // Your code goes here
 function createTodoList(array){
-  let ul=document.createElement('ul');
-  array.forEach(cv=>{
-    let p=document.createElement('p');
-    let li = document.createElement('li');
-    p.innerText=cv
-    li.innerText = cv;
-    ul.append(li,p);
+  let ul = document.createElement("ul");
+  let root =document.querySelector('html')
+  array.forEach((ele)=>{
+    let li = document.createElement("li");
+    let p  = document.createElement("p");
+    p.innerText = ele.name;
+    let input = document.createElement("input");
+    input.checked = true;
+    input.type  = "checkbox";
+    let span = document.createElement("span");
+    span.innerText = "X";
+    li.append(p,input,span);
+    ul.append(li)
   })
-  return ul;
-}
+  root.innerHTML=""
+    return root.append(ul);
+  }
 // TEST
 createTodoList([
   { name: 'Learn DOM', isDone: false },
