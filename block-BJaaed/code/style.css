@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: #377e80;
+    padding: 20px;
+}
+main{
+    background-color: #fdf5e8;
+}
+.head{
+    margin: 0;
+    color: #fffd5a;
+    text-align: center;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-size{
+    width:200px;
+    height: 200px;
+}
+.book-box{
+    background-color: #ffffff;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    padding: 10px 0;
+}
+.btn{
+    background-color: #387e80;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+}
